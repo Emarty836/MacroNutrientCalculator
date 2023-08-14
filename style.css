@@ -1,0 +1,28 @@
+.box1{
+    width:80%;
+    height:300px;
+    border:black solid 1px;
+    margin: 0 auto;
+}
+
+.macros{
+    background:blue;
+    height:130px;
+    width:40%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:solid 1px black;
+}
+
+.macroBox{
+    background:green;
+    height:130px;
+    width:100px;
+    border:solid 1px white;
+}
+
+.macroValueBox{
+    background:red;
+    width:100%;
+    height:80px;
+}

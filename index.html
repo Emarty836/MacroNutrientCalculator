@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Macronutrient Daily Food Tracking</title>
+</head>
+<body>
+    <h1>Macronutrient Daily Food Tracking</h1>
+    <div class="box1">
+        <label for="totalC">Total Daily Calories:</label>
+        <input type="text" id="totalC" name="totalC" required minlength="4" maxlength="5" /><br>
+        <label for="proteinPercent">Protein (% of Total Calories):</label>
+        <input type="range" id='protein' name="proteinPercent" min="0" max="100" value="30"/>
+        <input type="text" id="proteinValue" name="proteinPercent" value="30"/>
+        <br>
+        <label for="carbPercent">Carb (% of Total Calories):</label>
+        <input type="range" id='carb' name="carbPercent" min="0" max="100" value="40"/>
+        <input type="text" id="carbValue" name="carbPercent" value="40"/><br>
+        <label for="fatPercent">Fat (% of Total Calories):</label>
+        <input type="range" id='fat' name="proteinfat" min="0" max="100" value="30"/>
+        <input type="text" id="fatValue" name="fatPercent" value="30"/><br>
+        <div class="macros">
+                <div class="macroBox">
+                    <p>Protein</p>
+                    <div class="macroValueBox"><p id="pCal"></p><p id="pGrams"></p></div>
+                </div>
+                <div class="macroBox">
+                    <p>Carbohydrates</p>
+                    <div class="macroValueBox"><p id="cCal"></p><p id="cGrams"></p></div>
+                </div>
+                <div class="macroBox">
+                    <p>Fats</p>
+                    <div class="macroValueBox"><p id="fCal"></p><p id="fGrams"></p></div>
+                </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
