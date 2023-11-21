@@ -119,11 +119,13 @@ fats2.addEventListener('change', () => {
     assess2();
 });
 totalCal.addEventListener('input', () => {
-    localStorage.setItem('totalCalValue', totalCal.value);
+    // localStorage.setItem('totalCalValue', totalCal.value);
     proteinAmount.textContent = totalCal.value * protein2.value/100 + ' calories';
+    proteinGrams.textContent = Math.round(totalCal.value * protein2.value/400) + ' grams';
     carbAmount.textContent = totalCal.value * carb2.value/100 + ' calories';
+    carbGrams.textContent = Math.round(totalCal.value * carb2.value/400) + ' grams';
     fatAmount.textContent = totalCal.value * fats2.value/100 + ' calories';
-    
+    fatGrams.textContent = Math.round(totalCal.value * fats2.value/900) + ' grams';
 });
 
 
